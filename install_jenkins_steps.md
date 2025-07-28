@@ -19,7 +19,7 @@ ssh root@<IPaddress of droplet>
 <img width="466" height="538" alt="jenkins1" src="https://github.com/user-attachments/assets/5879bc5c-c4bb-4c39-851c-1a8d2dece6a9" />
 
 
-**Because we are installing Jenkins as a Docker container on the droplet server, we don't need to install Java or Jenkins directly - all we need is a Docker runtime
+**Because I was installing Jenkins as a Docker container on the droplet server, I didn't need to install Java or Jenkins directly - all I needed was a Docker runtime.
 
 4. **I then installed Docker runtime on the droplet:**
 
@@ -61,7 +61,8 @@ docker exec -it <container ID> bash
 
 **Here I could see I was logged in as a Jenkins service user and not the root user - good security practice**
 
-![Uploading jenkins5.png…]()
+
+<img width="612" height="122" alt="jenkins5" src="https://github.com/user-attachments/assets/ff9b36ef-806d-4954-ba68-c2e7a72cb203" />
 
 
 **I then looked for the Jenkins password by executing this path:**
