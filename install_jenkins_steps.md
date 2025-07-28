@@ -16,7 +16,8 @@ This demo shows the process of installing Jenkins on a DigitalOcean droplet serv
 ssh root@<IPaddress of droplet>
 ```
 
-![Uploading jenkins1.png…]()
+<img width="466" height="538" alt="jenkins1" src="https://github.com/user-attachments/assets/5879bc5c-c4bb-4c39-851c-1a8d2dece6a9" />
+
 
 **Because we are installing Jenkins as a Docker container on the droplet server, we don't need to install Java or Jenkins directly - all we need is a Docker runtime
 
