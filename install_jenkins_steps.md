@@ -16,6 +16,8 @@ This demo shows the process of installing Jenkins on a DigitalOcean droplet serv
 ssh root@<IPaddress of droplet>
 ```
 
+![Uploading jenkins1.png…]()
+
 **Because we are installing Jenkins as a Docker container on the droplet server, we don't need to install Java or Jenkins directly - all we need is a Docker runtime
 
 4. **I then installed Docker runtime on the droplet:**
@@ -27,6 +29,9 @@ apt install docker.io
 docker
 ```
 
+<img width="713" height="482" alt="jenkins2" src="https://github.com/user-attachments/assets/96a0e786-b8bb-4b71-86bb-0a5c2a7aee45" />
+
+
 5. **I could then install a Jenkins container on the droplet:**
 
 ```bash
@@ -35,7 +40,13 @@ docker run -p 8080:8080 -p 50000:50000 -d \
 docker ps
 ```
 
+<img width="956" height="441" alt="jenkins3" src="https://github.com/user-attachments/assets/beee84f8-d1e2-40a7-9594-2feea09b75a8" />
+
+
 **I could see port 8080 was exposed on the server, so I could then access Jenkins from the browser.
+
+<img width="1844" height="115" alt="jenkins4" src="https://github.com/user-attachments/assets/c4974a70-7964-4b75-9af0-9e622ca43527" />
+
 
 ```bash
 <IP address of droplet>:8080
@@ -48,6 +59,9 @@ docker exec -it <container ID> bash
 ```
 
 **Here I could see I was logged in as a Jenkins service user and not the root user - good security practice**
+
+![Uploading jenkins5.png…]()
+
 
 **I then looked for the Jenkins password by executing this path:**
 
@@ -66,3 +80,9 @@ cat /var/lib/docker/volumes/jenkins_home/_data/secrets/initialAdminPassword
 ```
 
 **I then selected "install suggested plugins" after pasting password into the Jenkins browser UI**
+
+
+<img width="915" height="948" alt="jenkins6" src="https://github.com/user-attachments/assets/279fd6fe-0c94-423a-b0a5-8d8777222d23" />
+
+
+
